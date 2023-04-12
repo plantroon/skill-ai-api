@@ -11,13 +11,14 @@ Install and configure [node-chatgpt-api](https://github.com/waylaidwanderer/node
 - **params** - other parameters for the API
 - **conversation_keys** - where supported, these will be saved to opsdroid memory to keep track of conversation in the thread
 
-You can likely adjust the config for many REST APIs. In the example below there is a line called `llama` for use with [text-generation-webui](https://github.com/oobabooga/text-generation-webui). It barely works as the APIs that I found were not usable for chat, but with trial and error your prompts can get some use out of it. The example uses kobold API, which must be enabled by running text-gengeration-webui with --extensions api flag.
+You can likely adjust the config for many REST APIs. In the example below there is a line called `llama` for use with [text-generation-webui](https://github.com/oobabooga/text-generation-webui). It barely works as the APIs that I found were not usable for chat, but with trial and error your prompts can get some use out of it. The example uses kobold API, which must be enabled by running text-gengeration-webui with `--extensions api` flag.
 
 # Example config
 ```
 skills:
-  api:
-    path: ~/.config/opsdroid/api
+  skill-ai-api:
+    repo: "https://github.com/plantroon/skill-ai-api.git"
+    branch: "main"
     apis:
       chatgpt: {hot-word: "chatgpt", api-url: "http://kubetest.lan:3009/conversation", prompt: "message", response: "['response']", params: { 'clientOptions': { 'clientToUse': 'chatgpt' }}, conversation_keys: {"conversationId", "conversationSignature", "clientId", "invocationId"}}
       bingai: {hot-word: "bing", api-url: "http://kubetest.lan:3009/conversation", prompt: "message", response: "['response']", params: { 'clientOptions': { 'clientToUse': 'bing' }}, conversation_keys: {"conversationId", "conversationSignature", "clientId", "invocationId"}}
