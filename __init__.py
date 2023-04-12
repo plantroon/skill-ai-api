@@ -1,9 +1,5 @@
 """
-This module contains functions for interfacing with node-chatgpt-api
-
-Functions:
-- TODO
-- do not put url into database... why the fuck
+This module contains functions for interfacing with node-chatgpt-api and possibly other APIs
 """
 import aiohttp
 from markdown import markdown
