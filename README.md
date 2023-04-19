@@ -22,7 +22,7 @@ skills:
     apis:
       chatgpt: {hot-word: "chatgpt", api-url: "http://kubetest.lan:3009/conversation", prompt: "message", response: "['response']", params: { 'clientOptions': { 'clientToUse': 'chatgpt' }}, conversation_keys: {"conversationId", "conversationSignature", "clientId", "invocationId"}}
       bingai: {hot-word: "bing", api-url: "http://kubetest.lan:3009/conversation", prompt: "message", response: "['response']", params: { 'clientOptions': { 'clientToUse': 'bing' }}, conversation_keys: {"conversationId", "conversationSignature", "clientId", "invocationId"}}
-      llama: { hot-word: "llama", api-url: "http://gpu-node03.lan:5000/api/v1/generate", prompt: "prompt", response: "['results'][0]['text']", params: {'max_new_tokens': 200, 'do_sample': false, 'temperature': 0.99, 'top_p': 0.9, 'typical_p': 1, 'repetition_penalty': 1.1, 'encoder_repetition_penalty': 1, 'top_k': 40, 'num_beams': 1, 'penalty_alpha': 0, 'min_length': 0, 'length_penalty': 1, 'no_repeat_ngram_size': 1, 'early_stopping': true, stopping_strings': { "\\n[", "\n[", "]:", "##", "###", "<noinput>", "\\end" }, seed': -1,  add_bos_token': true}}
+      llama: {hot-word: "llama", api-url: "http://gpu-node03.lan:5000/api/v1/generate", prompt: "prompt", response: "['results'][0]['text']", params: {'max_new_tokens': 200, 'do_sample': false, 'temperature': 0.99, 'top_p': 0.9, 'typical_p': 1, 'repetition_penalty': 1.1, 'encoder_repetition_penalty': 1, 'top_k': 40, 'num_beams': 1, 'penalty_alpha': 0, 'min_length': 0, 'length_penalty': 1, 'no_repeat_ngram_size': 1, 'early_stopping': true, stopping_strings': { "\\n[", "\n[", "]:", "##", "###", "<noinput>", "\\end" }, seed': -1,  add_bos_token': true}}
 ```
 
 # Preview of how it looks in Matrix
