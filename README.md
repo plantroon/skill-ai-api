@@ -1,4 +1,4 @@
-# skill-ai-api
+# skill_ai_api
 A skill for opsdroid for interacting with popular LLM's APIs with per-conversation threads in Matrix connector.
 
 # How to use
@@ -16,8 +16,8 @@ You can likely adjust the config for many REST APIs. In the example below there 
 # Example config
 ```
 skills:
-  skill-ai-api:
-    repo: "https://github.com/plantroon/skill-ai-api.git"
+  skill_ai_api:
+    repo: "https://github.com/plantroon/skill_ai_api.git"
     branch: "main"
     apis:
       chatgpt: {hot-word: "chatgpt", api-url: "http://kubetest.lan:3009/conversation", prompt: "message", response: "['response']", params: { 'clientOptions': { 'clientToUse': 'chatgpt' }}, conversation_keys: {"conversationId", "conversationSignature", "clientId", "invocationId"}}
