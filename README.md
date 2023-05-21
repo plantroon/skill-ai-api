@@ -26,4 +26,5 @@ skills:
 ```
 
 # Preview of how it looks in Matrix
-![matrix-threads-ai](https://upload.plantroon.com/Gsf.png)
+![element-pc](/images/element-pc.png)
+![element-android](/images/element-android.jpg)
